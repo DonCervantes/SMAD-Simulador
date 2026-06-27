@@ -13,7 +13,7 @@ const MODULES = [
     title: "Module 2 — Δv & mission timeline",
     blurb:
       "Hohmann transfer, plane changes, Tsiolkovsky, station-keeping, ascent losses, Gantt phases.",
-    available: false,
+    available: true,
   },
   {
     href: "/simulator/payload-link",

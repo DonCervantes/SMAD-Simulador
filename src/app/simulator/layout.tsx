@@ -3,7 +3,7 @@ import { ReactNode } from "react";
 
 const MODULES = [
   { href: "/simulator/orbit", label: "M1 · Orbit", available: true },
-  { href: "/simulator/timeline", label: "M2 · Δv timeline", available: false },
+  { href: "/simulator/timeline", label: "M2 · Δv timeline", available: true },
   {
     href: "/simulator/payload-link",
     label: "M3 · Link budget",
