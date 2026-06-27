@@ -1,26 +1,51 @@
 @import "tailwindcss";
+@import "katex/dist/katex.min.css";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Aerospace control-panel palette: deep slate background, off-white text,
+     cyan accent for primary readouts, amber for "warning" / advisory, red for
+     out-of-range. Inspired by MCC / ground-station console aesthetics. */
+  --color-bg: #0a1018;
+  --color-bg-elevated: #0f1722;
+  --color-bg-panel: #131c28;
+  --color-border: #233247;
+  --color-fg: #e6edf5;
+  --color-fg-muted: #8a98ac;
+  --color-fg-dim: #5d6a7e;
+  --color-accent: #5cf0ff;
+  --color-accent-dim: #2d8d99;
+  --color-ok: #5dffa0;
+  --color-warn: #ffb547;
+  --color-danger: #ff6b6b;
+  --color-readout: #c9f7ff;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-background: var(--color-bg);
+  --color-foreground: var(--color-fg);
+  --color-bg-elevated: var(--color-bg-elevated);
+  --color-bg-panel: var(--color-bg-panel);
+  --color-border-default: var(--color-border);
+  --color-fg-muted: var(--color-fg-muted);
+  --color-fg-dim: var(--color-fg-dim);
+  --color-accent: var(--color-accent);
+  --color-accent-dim: var(--color-accent-dim);
+  --color-ok: var(--color-ok);
+  --color-warn: var(--color-warn);
+  --color-danger: var(--color-danger);
+  --color-readout: var(--color-readout);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+body {
+  background: var(--color-bg);
+  color: var(--color-fg);
+  font-family: var(--font-sans), system-ui, sans-serif;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Tabular numbers for all readouts so values don't jitter while sliding. */
+.readout {
+  font-feature-settings: "tnum" 1, "zero" 1;
+  font-variant-numeric: tabular-nums;
 }
