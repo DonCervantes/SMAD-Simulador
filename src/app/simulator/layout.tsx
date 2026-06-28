@@ -19,7 +19,7 @@ const MODULES = [
   {
     href: "/simulator/reliability",
     label: "M5 · Reliability",
-    available: false,
+    available: true,
   },
 ];
 
