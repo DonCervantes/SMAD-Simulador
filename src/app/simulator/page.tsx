@@ -20,21 +20,21 @@ const MODULES = [
     title: "Module 3 — Payload & link budget",
     blurb:
       "FSPL + ITU-R P.676 atmospheric + P.618 rain + pointing + polarization; margin gauge.",
-    available: false,
+    available: true,
   },
   {
     href: "/simulator/users-demand",
     title: "Module 4 — Users & demand",
     blurb:
       "GSD via diffraction limit, Walker constellation sizing, navigation DOP, derived requirements.",
-    available: false,
+    available: true,
   },
   {
     href: "/simulator/reliability",
     title: "Module 5 — Reliability & risk",
     blurb:
       "R(t), series/parallel/k-of-n/cold-standby; the six redundancy architectures from the syllabus.",
-    available: false,
+    available: true,
   },
 ];
 
