@@ -9,7 +9,7 @@ const MODULES = [
   {
     href: "/simulator/payload-link",
     label: "M3 · Link budget",
-    available: false,
+    available: true,
   },
   {
     href: "/simulator/users-demand",

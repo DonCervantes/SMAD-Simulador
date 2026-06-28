@@ -67,6 +67,13 @@ export const K_BOLTZMANN_DBW_K_HZ = -228.6;
 export const C_LIGHT_KM_S = 299_792.458;
 
 /**
+ * Speed of light in vacuum in m/s. Exact by SI definition.
+ * Source: 17th CGPM, 1983; SI Brochure.
+ * Units: m / s.
+ */
+export const C_LIGHT = 299_792_458;
+
+/**
  * Earth's sidereal rotation rate, used for ECI ↔ ECEF transforms in ground-track
  * propagation. Equivalent to one revolution in 86 164.0905 s.
  * Source: IERS Conventions (2010), Technical Note No. 36, §1.
