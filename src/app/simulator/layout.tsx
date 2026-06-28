@@ -14,7 +14,7 @@ const MODULES = [
   {
     href: "/simulator/users-demand",
     label: "M4 · Users & demand",
-    available: false,
+    available: true,
   },
   {
     href: "/simulator/reliability",
